@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap');
+body{
+    font-family: 'Zen Loop', cursive; 
+    font-size: 150%;
+}
+header{
+    text-align: center;
+}
+main section.banner{
+    background-image: url("../img/lemon_pie.png");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 343px;
+    color: white;
+    text-align: center;
+}
+section.banner ~ section{
+    max-width: 80%;
+    margin: 30px auto;
+}
+section i.fas{
+    color: teal;
+}
