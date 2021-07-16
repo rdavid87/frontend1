@@ -1,29 +1,39 @@
+@font-face {
+    font-family: "Roboto Slab";
+    src: url(../fonts/RobotoSlab-VariableFont_wght.ttf);
+}
 body{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Reboto Slab', Times, serif;
     padding-bottom: 10px;
     min-height: unset;
     max-width: 1366px;
     margin: 0 auto;
     grid-template-columns: fit-content(400px) 3fr;
-
 }
 header{
-    background-color: #E5E5E5;
+    min-height: 350px;
     text-align: center;
+    vertical-align: bottom;
 }
-
+header section.banner{
+    background-image: url("../img/ciudad_gotica.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 350px;
+    color: white;
+}
 h1, h2{
     background-color:#C4C4C4;
     color: #005677;
     font-style: normal;
     font-weight: bold;
-    padding: 10px;
     letter-spacing: 8px;
 }   
 h1{
-    font-size: 35px;
+    font-size: 35px;   
 }
 h2{
+    padding: 10px;
     font-size: 20px;
 }
 dl{
