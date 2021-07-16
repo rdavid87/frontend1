@@ -11,7 +11,7 @@ body{
     grid-template-columns: fit-content(400px) 3fr;
 }
 header{
-    min-height: 350px;
+    min-height: 220px;
     text-align: center;
     vertical-align: bottom;
 }
@@ -19,7 +19,7 @@ header section.banner{
     background-image: url("../img/ciudad_gotica.jpg");
     background-size: cover;
     background-attachment: fixed;
-    height: 350px;
+    height: 220px;
     color: white;
 }
 h1, h2{
@@ -35,6 +35,11 @@ h1{
 h2{
     padding: 10px;
     font-size: 20px;
+}
+.perfil{
+    padding: .25rem;
+    background-color: white;
+    border-radius: 20%;
 }
 dl{
     width: 100%;
