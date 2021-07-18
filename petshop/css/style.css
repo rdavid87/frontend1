@@ -1,0 +1,70 @@
+@font-face {
+    font-family: "Roboto Slab";
+    src: url(../fonts/RobotoSlab-VariableFont_wght.ttf);
+}
+body{
+    font-family: 'Reboto Slab', Times, serif;
+    min-height: unset;
+    max-width: 1282px;
+    margin: 0 auto;
+}
+
+header .header-top{
+    background-color: black;
+    color: white;
+    display: flex;
+}
+.align-left{
+    width: 80%;
+    margin-right: 20px;
+}
+
+.menu-regional{
+    width: 80%;
+    text-align: right;
+    margin-right: 20px;
+}
+.menu-regional ul{
+    list-style-type:none;
+}
+.menu-regional li{
+    display: inline;
+}
+/* MENU CENTRAL*/
+.menu-central ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 20px;
+    overflow: hidden;
+    background-color:#F0A83E;
+    text-align: right;
+
+}
+
+.menu-central li {
+    display: inline;
+}
+.menu-central li a {
+    
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menu-central li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.slideshow{
+    background-image: url("../img/background-1.png");
+    
+
+}
+.slideshow article{
+    margin-left: 50%;
+}
+.slideshow h2{
+    font-size: 30pt;
+    color: white;
+}
