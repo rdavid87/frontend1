@@ -2,6 +2,12 @@
     font-family: "Roboto Slab";
     src: url(../fonts/RobotoSlab-VariableFont_wght.ttf);
 }
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+
+}
 body{
     font-family: 'Reboto Slab', Times, serif;
     min-height: unset;
@@ -14,6 +20,10 @@ header .header-top{
     background-color: black;
     color: white;
     display: flex;
+    /*para mantener siempre visible*/
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 .align-left{
     width: 80%;
