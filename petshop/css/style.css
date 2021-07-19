@@ -7,6 +7,7 @@ body{
     min-height: unset;
     max-width: 1282px;
     margin: 0 auto;
+    color: #3C2313;
 }
 
 header .header-top{
@@ -44,6 +45,9 @@ header .header-top{
 .menu-central li {
     display: inline;
 }
+.logo-menu{
+    float: left;
+}
 .menu-central li a {
     
     color: white;
@@ -58,13 +62,36 @@ header .header-top{
 
 .slideshow{
     background-image: url("../img/background-1.png");
-    
-
+    height: 512px;
 }
 .slideshow article{
-    margin-left: 50%;
+    margin-left: 60%;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 20px;
 }
 .slideshow h2{
-    font-size: 30pt;
+    font-size: 25pt;
+    background-color: white;
+    margin: 20px;
+    border-radius: 5px;
+    padding: 12px;
+}
+.slideshow button{
+    background-color: #F0A83E;
     color: white;
+    font-size: 15pt;
+    padding: 20px;
+    border: none;
+    border-radius: 6px;
+}
+
+.destacados{
+    text-align: center;
+}
+.destacados h1{
+    font-size: 30pt;
+}
+.destacados img{
+    color: #F0A83E;
 }
