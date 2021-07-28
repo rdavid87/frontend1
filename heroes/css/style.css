@@ -80,6 +80,7 @@ footer{
 
 .img-header{
     width: 80%;
+    border-radius: 8% 8% 0% 0%;
 }
 
 .img-heart{
