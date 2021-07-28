@@ -14,6 +14,9 @@ body{
     margin: auto;
 }
 
+h1{
+    color:white;
+}
 .descuento{
     background-color: #1CD1B0;
     padding: 10px;
@@ -26,12 +29,27 @@ header h1{
     box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
 }
 
-
-footer h5{
+footer{
     background-color: #00669F;
     padding: 20px;
+    position: relative; 
     color: white;
 }
+
+.footer-derechos{
+    text-align: center;
+    width: 100%;
+
+}
+
+.footer-github{
+    font-size: 2rem;
+    font-weight: bold;
+    position: absolute;
+    right:20px;
+    top: 20%;
+}
+
 .top-visible{
     position: sticky;
     top: 0;
@@ -43,8 +61,7 @@ footer h5{
     display: flex;
     flex-flow: wrap;
     margin: 50px;
-    justify-content: space-between;
-    align-content: space-between;
+    align-content: space-around;
     
 }    
 
@@ -61,11 +78,15 @@ footer h5{
     position: relative;
 }
 
-.fa-gratipay{
-    color: red;
-    font-size: 30px;
+.img-header{
+    width: 80%;
+}
+
+.img-heart{
     position: absolute;
-    margin: 20px;
+    top: 20px;
+    left: 20px;
+    width: 40px;
 }
 
 .avatar{
@@ -74,12 +95,14 @@ footer h5{
     top: 60%;
     left: 25%;
     box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+    width:30%;
 
 }
+
 .card-description{
     background-color: #F3F3F3;
     height: 336px;
-    width: 300px;
+    width: 80%;
     padding: 40px 10px 20px 10px;
 }
 .card-description h2{

@@ -16,7 +16,7 @@ body{
     color: #3C2313;
 }
 
-header .header-top{
+header.header-top{
     background-color: black;
     color: white;
     display: flex;
@@ -96,12 +96,30 @@ header .header-top{
     border-radius: 6px;
 }
 
+.destacados-header{
+    text-align: center;
+    margin: 40px 40px;
+}
+.destacados-header h1{
+    font-size: 25pt;
+}
+.destacados-header img{
+    width:100px;
+    height: 100px;
+}
+
 .destacados{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.destacados article{
+    background-color:#FBFAF6;
+}
+.destacados h4{
     text-align: center;
 }
-.destacados h1{
-    font-size: 30pt;
-}
-.destacados img{
-    color: #F0A83E;
+.precio{
+    color:#F0A83E;
 }
