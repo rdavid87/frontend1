@@ -30,24 +30,20 @@ header h1{
 }
 
 footer{
+    width: 100%;
     background-color: #00669F;
     padding: 20px;
-    position: relative; 
     color: white;
+    display:flex;
+    justify-content:space-between ;
+    flex-wrap: wrap;
 }
 
-.footer-derechos{
-    text-align: center;
-    width: 100%;
-
-}
 
 .footer-github{
     font-size: 2rem;
     font-weight: bold;
-    position: absolute;
-    right:20px;
-    top: 20%;
+
 }
 
 .top-visible{
@@ -80,7 +76,7 @@ footer{
 
 .img-header{
     width: 80%;
-    border-radius: 8% 8% 0% 0%;
+    border-radius: 5% 5% 0% 0%;
 }
 
 .img-heart{
@@ -116,5 +112,9 @@ footer{
     height: 48px;
     color: #F3F3F3;
     margin: 20px 85px 20px 85px ;
+    
+}
+
+@media (min-width: 960px) and (max-width:1279){
     
 }
