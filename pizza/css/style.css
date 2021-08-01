@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+/* variables*/
+:root {
+    --color-background:black;
+    --color-font:white;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header nav i.fas{
+    display: none;
+}    
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color:#E5E5E5;
+}
+
+main {
+    padding: 35px 0px;
+    /* Alto del main: alto viewport - alto Header - alto Footer 
+       Me aseguro que el main ocupa todo el alto disponible */
+    min-height: calc(100vh - 100px - 150px); 
+    color:var(--color-font);
+}
+
+h3{
+    font-size: 1.80em;
+}
+.container-sup-inferior{ 
+    background-color:var(--color-background);
+    color:var(--color-font);
+    padding:5px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.logo{
+    display: flex;
+    gap: 2px;/*separador entre los elementos*/
+    align-items: center;
+}
+
+.logo span:nth-child(1) {
+    color:green;
+}
+.logo span:nth-child(2) {
+    color:red
+}
+
+
+header nav ul{
+    display: flex;
+    color:white;
+    gap: 13px;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+.card{
+    border-radius: 5px;
+    height: 21.875rem; /* 350px/16px (16px=1rem) */
+    width: 30.625rem;  /* 490px/16px (16px=1rem) */
+}
+.delivery{
+    display: flex;
+    background: url("../img/delivery.jpg");
+    font-weight: bold;
+    padding: 20px;
+
+}
+.delivery span{
+    color:red;
+}
+.top{
+    background-color: white;
+    color:black;
+}
+.top h3{
+    text-align: center;
+    color: red;
+    padding: 26px;
+}
+.top-content{
+    font-size: 1.2em;
+    
+}
+.top-content li{
+    line-height: 1.8em;
+}
+
+footer li {
+    line-height: 1.8em;
+}
+
+@media screen and (max-width:  768px){
+
+    /*oculta menu lista*/
+    header nav ul{
+        visibility: hidden;
+    }
+    /*muestra icono de menu*/
+    header nav i.fas{
+        display: inline; 
+        font-size: 2rem;
+        border-radius: 5%;
+        padding: 2px 5px;
+    };
+    header nav{
+        text-align:center;
+    }
+    
+}
