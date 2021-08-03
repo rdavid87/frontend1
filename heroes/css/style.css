@@ -8,42 +8,112 @@
     padding: 0px;
 
 }
-
 body{
-    min-height: unset;
-    margin: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-h1{
-    color:white;
+main {
+    padding: 35px 0px;
+    /* Alto del main: alto viewport - alto Header - alto Footer 
+       Me aseguro que el main ocupa todo el alto disponible */
+    color:var(--color-font);
+    text-align: center;
+    /*height: 74vh;*/
 }
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+form input, select, textarea{
+    width: 30%;
+    font-size: 16pt;
+    padding: 10px;
+    
+}
+form button{
+    padding: 15px;
+    border: 0rem;
+    border-radius: 1rem;
+    font-weight: bold;
+    flex-wrap: nowrap;
+    width: 45%;
+}
+form button[type=submit]{
+    background-color:turquoise;
+}
+form button[type=reset]{
+    background-color:gray;
+}
+.botones {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.flotante{
+    position: fixed;
+    font-size: 40pt;
+    color: #00669F;
+    top: 50%;
+    right: 10px;
+    z-index: 100;
+}
+
 .descuento{
     background-color: #1CD1B0;
     padding: 10px;
 }
 
-header h1{
-    font-size: 25pt;
+header{
+    display: flex;
+    justify-content: space-between;
     background-color: #00669F;
     padding: 20px;
     box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+    color:white;
 }
 
+h1, h2{
+    font-size: 25pt;
+    
+}
+header nav{
+    padding-right: 40px;
+}
+
+header nav ul{
+    display: inline-block;
+    font-size: 15pt;
+}
+header nav li{
+    display: inline-block;
+    padding: 10px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: white;
+}
 footer{
-    width: 100%;
     background-color: #00669F;
     padding: 20px;
     color: white;
     display:flex;
     justify-content:space-between ;
     flex-wrap: wrap;
+    margin-top: auto;
 }
 
 
 .footer-github{
     font-size: 2rem;
     font-weight: bold;
-
+    padding-right: 40px;
 }
 
 .top-visible{
@@ -53,68 +123,91 @@ footer{
 }
 
 .container{
-    width: 100%;
     display: flex;
     flex-flow: wrap;
     margin: 50px;
     align-content: space-around;
-    
+    justify-content: space-evenly;
+    gap: 15px;
 }    
 
 .card{
-    width: 300px;
-    height: 530px;
-    flex: 1 1 auto;  
-    top: 10px;
-    margin: 10px;
-    
+    width: 400px;
 }
 
 .card-header{
     position: relative;
+    width: 100%;
 }
 
 .img-header{
-    width: 80%;
+    width: 100%;
     border-radius: 5% 5% 0% 0%;
 }
 
 .img-heart{
     position: absolute;
     top: 20px;
-    left: 20px;
+    left: 50px;
+    width: 40px;
+}
+
+.like-detalle{
+    position: relative;
+    top: -50px;
+    left: -60px;
     width: 40px;
 }
 
 .avatar{
     position: absolute;
-    border-radius: 80%;
+    border-radius: 100%;
     top: 60%;
-    left: 25%;
+    left: 30%;
     box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
     width:30%;
-
 }
 
+.avatar-detalle{
+    position: relative;
+    border-radius: 100%;
+    top: -70px;
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+
+}
+.card-supredonda{
+    border-radius: 3rem 3rem 0rem 0rem ;
+}
 .card-description{
     background-color: #F3F3F3;
-    height: 336px;
-    width: 80%;
     padding: 40px 10px 20px 10px;
 }
 .card-description h2{
     text-align: center;
     padding: 10px;
 }
-.button{
-    background-color: #00669F;
-    width: 128px;
-    height: 48px;
-    color: #F3F3F3;
-    margin: 20px 85px 20px 85px ;
-    
+.card-description >p{
+    padding: 10px;
 }
-
-@media (min-width: 960px) and (max-width:1279){
+.card-footer{
+    background-color: #2C0187;
+    padding: 20px;
+    text-align: center;
+    border-radius: 0rem 0rem 3rem 3rem;
+}
     
+
+.card-footer a{
+    text-decoration: none;
+    color: white;
+}   
+.elementos{
+    display: flex;
+    justify-content: space-evenly;
+    padding: auto;
+}
+.background-fondo{
+    background-image: url(../img/bg-quin.png);
+    background-repeat: no-repeat;
+    background-size: 100vw;
 }
