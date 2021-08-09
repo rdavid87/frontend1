@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heroes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <section class="descuento">
+        <h5>Descuentos 20%</h5>
+    </section>
+    <header class="top-visible">
+        <article>
+            <h1>Card Super Heroes</h1>
+        </article>
+        <article>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                    <li><a href="./registro.html">Registrarme</a></li>
+                    <li><a href="./login.html">Ingresar</a></li>
+                    
+                </ul>
+            </nav>
+        </article>
+    </header>
+    <main>
+        <div class="card-form">
+            <h2>¡Añadí tu Super Heroe!</h2>
+            <h4>Agregá tu personaje favorito completando las opciones.</h4>
+            <form method="POST" name="registro" action="#"></form>
+            <div class="form-new-card">
+                    <div class="columnas">
+                        <label class="container-label" for="nombres">Nombre</label>
+                        <input type="text" name="nombres" id="nombres" placeholder="Harley Quinn" required>
+                        <label class="container-label" for="fecha">Fecha</label>
+                        <input type="date" name="fecha" id="fecha" placeholder="dd/mm/YYYY" required>
+                        <label class="container-label" for="descripcion">Descripción</label>
+                        <textarea name="descripcion" id="descripcion" placeholder="Escriba una descripción de su super heroe">
+                        </textarea>
+                    </div>
+                    <div class="columnas">
+                        <label class="container-label" for="especie">Especie</label>
+                        <select name="especie" id="especie" required>
+                            <option>Seleccionar...</option>
+                            <option value="Fuego">Fuego</option>
+                            <option value="Aire">Aire</option>
+                            <option value="Agua">Agua</option>
+                            <option value="Tierra">Tierra</option>
+                        </select>
+                        <label for="foto">Foto</label>
+                        <input type="file" name="foto" id="foto">   
+                        <label>Poderes</label>
+                        <label class="container-label">Volar
+                            <input type="checkbox" name="poderes" id="poderes" value="Volar">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container-label">Superinteligencia
+                            <input type="checkbox" name="poderes" id="poderes" value="Superinteligencia">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container-label">Vista de rayo laser
+                            <input type="checkbox" name="poderes" id="poderes" value="RayoLaser">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container-label">Billetera Gorda
+                            <input type="checkbox" name="poderes" id="poderes" value="Billetera">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label>Tipo de Personaje</label>
+                        <label class="container-label">Héroe/Heroina
+                            <input type="radio" name="tipoPersonaje" id="tipoPersonaje" value="heroe">
+                            <span class="checkmark"></span>
+                        </label>
+
+                        <label class="container-label">Villano / Villana
+                            <input type="radio" name="tipoPersonaje" id="tipoPersonaje" value="villano">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+            </div>
+            <div class="botones">
+                <button type="submit" value="add">Añadir</button>
+            </div>
+        </form>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-derechos">
+            <span >Todos los derechos reservados a FRON END I</span>
+        </div>
+        <div class="footer-github">
+            <span >GitHub</span>
+        </div>
+    </footer>
+</body>
+<script type="text/javascript" src="./js/funciones.js"></script>
+</html>
